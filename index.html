@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>teste</title>
+<style type="text/css">
+	@import "include/css/demo_page.css"; @import "include/css/demo_table_jui.css";
+	@import "include/css/demo_table.css";
+</style>
+		
+<script src="include/js/jquery.js"></script>
+<script src="include/js/jquery.dataTables.js"></script>
+<!-- <script src="include/js/underscore.js"></script> -->
+<!-- <script src="include/js/backbone.js"></script> -->
+
+<script src="main/main.js"></script>
+</head>
+<body>
+
+	<div id="dataStore">&nbsp;</div>
+
+	<input type="button" onclick="javascript:getConteudo()">
+
+	<table id="grid" class="display">
+		<thead>
+			<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="gradeA">
+				<td>1</td>
+				<td>Teste</td>
+			</tr>
+			<tr class="gradeA">
+				<td>2</td>
+				<td>Abcde</td>
+			</tr>
+		</tbody>	
+	</table>
+	
+</body>
+</html>
