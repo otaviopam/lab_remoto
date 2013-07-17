@@ -1,6 +1,6 @@
 $(function() {
-	//getFeed('http://sindmetau.org.br/site/index.php?format=feed&type=rss');
-	getFeed('http://feeds.arstechnica.com/arstechnica/index?format=xml');
+	getFeed('http://sindmetau.org.br/site/index.php?format=feed&type=rss');
+	//getFeed('http://feeds.arstechnica.com/arstechnica/index?format=xml');
 	
 });
 
@@ -44,6 +44,8 @@ function getConteudo(retorno) {
 
 	$('#grid').dataTable({
 		"sPaginationType": "full_numbers",
+		"iDisplayLength": 3,
+		 "aaSorting": [ [0,'asc'] ],
 		"aaData": aaData
 	});
 	

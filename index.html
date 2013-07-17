@@ -4,8 +4,12 @@
 <head>
 <title>teste</title>
 <style type="text/css">
-	@import "include/css/demo_page.css"; @import "include/css/demo_table_jui.css";
+	@import "include/css/demo_page.css"; 
 	@import "include/css/demo_table.css";
+	
+body {
+	font-size:0.8em
+}	
 </style>
 		
 <script src="include/js/jquery.js"></script>
@@ -17,28 +21,17 @@
 </head>
 <body>
 
-	<div id="dataStore">&nbsp;</div>
-
-	<input type="button" onclick="javascript:getConteudo()">
+<div id="tabela" style="width:800px;">
 
 	<table id="grid" class="display">
 		<thead>
 			<tr>
-			<th>Title</th>
-			<th>Content</th>
+			<th>Titulo</th>
+			<th>Conteudo</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr class="gradeA">
-				<td>1</td>
-				<td>Teste</td>
-			</tr>
-			<tr class="gradeA">
-				<td>2</td>
-				<td>Abcde</td>
-			</tr>
-		</tbody>	
 	</table>
 	
+</div>
 </body>
 </html>
