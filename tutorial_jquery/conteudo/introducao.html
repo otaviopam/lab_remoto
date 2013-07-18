@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Início</title>
+<link rel="stylesheet" type="text/css" href="../include/css/tutorialjquery.css">
+</head>
+<body>
+
+<h1>Como se basicamente utiliza a jQuery?</h1>
+
+<h4>O sinal de dólar (<span class="metodos">$</span>) representa o objeto jQuery (que também é acessível pelo nome jQuery). 
+    Através dele acessamos a todas as funcionalidades disponíveis na biblioteca.</h4>
+
+<h1>jQuery()</h1>
+
+<h4>A função <span class="metodos">$</span>() é a principal função da jQuery. </h4>
+
+
+<h4>Seletores: é utilizado o padrão CSS3 (ver seção "Links").</h4>
+
+
+
+
+<h5>Exemplos:</h5>
+
+<div id="container">
+    <div id="pai">&lt;div id="pai"&gt;PAI
+        <div id="filho">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho"&gt;FILHO&lt;/div&gt;</div>
+        &lt;/div&gt;
+    </div>
+</div>
+
+<h4><span class="metodos">$</span>('<span class="string">#pai</span>'): Retorna um array com os resultados do seletor utilizado (no caso, um só elemento e seu respectivo "filho").</h4>
+
+<h4><span class="metodos">$</span>('<span class="string">#pai</span>').<span class="metodos">children</span>('<span class="string">#filho</span>'): Nesse caso, retorna um array só com o elemento "filho".</h4>
+
+<h4><span class="metodos">$</span>('<span class="string">#pai</span>').<span class="metodos">children</span>('<span class="string">#filho</span>').<span class="metodos">remove</span>(): Remove o elemento "filho".</h4>
+
+
+</body>
+</html>
