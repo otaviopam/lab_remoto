@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding:0px;
+}
+
+h4 span.metodos {
+    font-weight: bold;
+    color: #549266;
+    font-size: larger;
+}
+h4 span.string {
+    font-weight: bold;
+    color: #db903b;
+    font-size: larger;
+}
+
+h4 {
+    font-weight: normal;
+}
