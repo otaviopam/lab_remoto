@@ -6,12 +6,12 @@ body {
 h4 span.metodos {
     font-weight: bold;
     color: #549266;
-    font-size: larger;
+    font-size: normal;
 }
 h4 span.string {
     font-weight: bold;
     color: #db903b;
-    font-size: larger;
+    font-size: normal;
 }
 
 h4 {

@@ -20,7 +20,7 @@ Mais especificamente, programadores podem "anexar" manipuladores de eventos dire
 existem diversos problemas que podem ocorrer com esse tipo de abordagem, entre esses:</h4>
 
 <ul>
-	<li>Resulta em uma estrutura monolítica, onde não se separa lógica de programação (Javascript) de estrutura de apresentação (HTML).</li>
+	<li>Isso resulta em uma estrutura monolítica, onde não se separa lógica de programação (Javascript) de estrutura de apresentação (HTML).</li>
 	<li>Cria uma tendência de repetição desnecessária e de dispersão do código dentro do HTML.</li>
 </ul>
 
@@ -29,8 +29,10 @@ e designers, por exemplo).
 
 <h3>jQuery como uma solução</h3>
 
-<h4>Com a jQuery, temos uma forma eficiente (e fácil) de separar o comportamento da aplicação de sua estrutura de apresentação. A biblioteca disponibiliza
-tais funcionalidades através de seletores (padrão CSS3) e de manipuladores de evento internos. Além de outras diversas funcionalidades.</h4>
+<h4>Com a jQuery, temos uma forma eficiente (e fácil) de separar o comportamento da aplicação de sua estrutura de apresentação, além de outras diversas funcionalidades. 
+A biblioteca disponibiliza tal funcionalidade através de seletores (padrão CSS3) e de manipuladores de evento internos. </h4>
+
+<h4><span class="metodos">$</span>('<span class="string">#conteudo</span>').<span class="metodos">click</span>(function () {<span class="metodos">alert</span>('Clicou!')} );</h4>
 
 </body>
 </html>

@@ -9,18 +9,35 @@
 
 <h1>Basicamente, como se utiliza a jQuery?</h1>
 
+<h3>Inicialização</h3>
+
+<h4>Para se inicializar a biblioteca, basta adicionar a seguinte linha na seção &lt;head&gt; da estrutura HTML:</h4>
+
+<pre class="snippet">
+&lt;script src="../caminho/para/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+<h1>$</h1>
+
 <h4>O sinal de dólar (<span class="metodos">$</span>) representa o objeto jQuery (que também é acessível pelo nome jQuery). 
     Através dele acessamos a todas as funcionalidades disponíveis na biblioteca.</h4>
 
 <h1>jQuery()</h1>
 
-<h4>A função <span class="metodos">$</span>() é a principal função da jQuery. Ela retorna uma coleção dos elementos correspondentes ao seletor passado como argumento.
+<h4>A função <span class="metodos">$</span>() é a principal função da jQuery. Ela retorna um "set" dos elementos correspondentes ao seletor passado como argumento.
 Também é possível passar um elemento como argumento.</h4>
 
+<h4><span class="metodos">$</span>('<span class="string">div</span>').<span class="metodos">addClass</span>('<span class="string">minhaClasse</span>');</h4>
 
-<h4>Seletores: é utilizado o padrão CSS3 (ver seção "Links").</h4>
+<h3>Princípio:</h3>
+<ul>
+	<li>Encontre alguns elementos (utilizando seletores).</li>
+	<li>Faça algo com esses elementos.</li>
+</ul>
 
-<h4>Exemplos:</h4>
+<h4>Para os seletores é utilizado o padrão CSS3 (ver seção "Links").</h4>
+
+<h1>Exemplos:</h1>
 
 <h3>Código:</h3>
 <pre class="snippet">
@@ -35,7 +52,7 @@ Também é possível passar um elemento como argumento.</h4>
 
 <div id="elemento2" class="classe1">ELEMENTO2</div>
 
-<h4><span class="metodos">$</span>('<span class="string">#elemento1</span>'): Retorna uma coleção com os resultados do seletor utilizado (no caso, um só elemento).</h4>
+<h4><span class="metodos">$</span>('<span class="string">#elemento1</span>'): Retorna um "set" com os resultados do seletor utilizado (no caso, um só elemento).</h4>
 
 <h4><span class="metodos">$</span>('<span class="string">.classe1</span>'): Nesse caso, retorna todos os elementos que utilizem a classe 'classe1'.</h4>
 
@@ -75,11 +92,13 @@ Também é possível passar um elemento como argumento.</h4>
     </div>
 </div>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai1</span>'): Retorna uma coleção com os resultados do seletor utilizado (no caso, o elemento "pai1" e seus respectivos "filhos").</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1</span>'): Retorna um "set" com os resultados do seletor utilizado (no caso, o elemento "pai1" e seus respectivos "filhos").</h4>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai1</span>').<span class="metodos">children</span>(): Retorna uma coleção com os todos os elementos "filhos" do elemento "pai1".</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1</span>').<span class="metodos">children</span>(): Retorna um "set" com os todos os elementos "filhos" do elemento "pai1".</h4>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai1 #filho3</span>'): Nesse caso, retorna uma coleção só com o elemento "filho3".</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1 :first-child</span>'): Retorna um "set" só com o primeiro elemento "filho" do elemento "pai1".</h4>
+
+<h4><span class="metodos">$</span>('<span class="string">#pai1 #filho3</span>'): Nesse caso, retorna um "set" só com o elemento "filho3".</h4>
 
 <h4><span class="metodos">$</span>('<span class="string">#pai1 #filho3</span>').<span class="metodos">remove</span>(): Remove o elemento "filho3", "filho" do elemento "pai1".</h4>
 
