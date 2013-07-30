@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Função</title>
+<link rel="stylesheet" type="text/css" href="../include/css/tutorialjquery.css">
+</head>
+<body>
+
+<h1>Basicamente, por que utilizar a jQuery?</h1>
+
+<h3>O problema</h3>
+
+<h4>A linguagem Javascript permite que os programadores modifiquem o estilo, conteúdo e comportamento dos elementos de uma página Web. 
+Mais especificamente, programadores podem "anexar" manipuladores de eventos diretamente no HTML, como abaixo:</h4>
+
+<pre class="snippet">&lt;div id="conteudo" onclick="alert('Clicou!')" &gt;...&lt;/div&gt;</pre>
+
+<h4>Mesmo que o exemplo acima represente uma maneira possível e correta (de acordo com padrões) de se manipular eventos em Javascript, 
+existem diversos problemas que podem ocorrer com esse tipo de abordagem, entre esses:</h4>
+
+<ul>
+	<li>Resulta em uma estrutura monolítica, onde não se separa lógica de programação (Javascript) de estrutura de apresentação (HTML).</li>
+	<li>Cria uma tendência de repetição desnecessária e de dispersão do código dentro do HTML.</li>
+</ul>
+
+O que acaba dificultando tanto a manutenção do código quanto a diversos outros aspectos no desenvolvimento (como a divisão de tarefas entre programadores 
+e designers, por exemplo).
+
+<h3>jQuery como uma solução</h3>
+
+<h4>Com a jQuery, temos uma forma eficiente (e fácil) de separar o comportamento da aplicação de sua estrutura de apresentação. A biblioteca disponibiliza
+tais funcionalidades através de seletores (padrão CSS3) e de manipuladores de evento internos. Além de outras diversas funcionalidades.</h4>
+
+</body>
+</html>
