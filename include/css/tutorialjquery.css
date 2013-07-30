@@ -17,3 +17,17 @@ h4 span.string {
 h4 {
     font-weight: normal;
 }
+
+.snippet {
+	background-color: #f0f0f0;
+	border: solid gray 1px;
+	margin: 0px 2em 0px 2em;
+	padding: 1em;
+	clear: both;
+}
+
+pre {
+	display: block;
+	font-family: monospace;
+	white-space: pre;	
+}

@@ -7,35 +7,81 @@
 </head>
 <body>
 
-<h1>Como se basicamente utiliza a jQuery?</h1>
+<h1>Basicamente, como se utiliza a jQuery?</h1>
 
 <h4>O sinal de dólar (<span class="metodos">$</span>) representa o objeto jQuery (que também é acessível pelo nome jQuery). 
     Através dele acessamos a todas as funcionalidades disponíveis na biblioteca.</h4>
 
 <h1>jQuery()</h1>
 
-<h4>A função <span class="metodos">$</span>() é a principal função da jQuery. </h4>
+<h4>A função <span class="metodos">$</span>() é a principal função da jQuery. Ela retorna uma coleção dos elementos correspondentes ao seletor passado como argumento.
+Também é possível passar um elemento como argumento.</h4>
 
 
 <h4>Seletores: é utilizado o padrão CSS3 (ver seção "Links").</h4>
 
+<h4>Exemplos:</h4>
 
+<h3>Código:</h3>
+<pre class="snippet">
+&lt;div id="elemento1" class="classe1"&gt;ELEMENTO1&lt;/div&gt;
 
+&lt;div id="elemento2" class="classe1"&gt;ELEMENTO2&lt;/div&gt;
+</pre>
 
-<h5>Exemplos:</h5>
+<h3>Visualização:</h3> 
 
+<div id="elemento1" class="classe1">ELEMENTO1</div>
+
+<div id="elemento2" class="classe1">ELEMENTO2</div>
+
+<h4><span class="metodos">$</span>('<span class="string">#elemento1</span>'): Retorna uma coleção com os resultados do seletor utilizado (no caso, um só elemento).</h4>
+
+<h4><span class="metodos">$</span>('<span class="string">.classe1</span>'): Nesse caso, retorna todos os elementos que utilizem a classe 'classe1'.</h4>
+
+<p>&nbsp;</p>
+<hr>
+
+<h3>Código:</h3>
+
+<pre class="snippet">
+&lt;div id="pai1"&gt;PAI1
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho1"&gt;FILHO1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho2"&gt;FILHO2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho3"&gt;FILHO3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho4"&gt;FILHO4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="pai2"&gt;PAI2
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho1"&gt;FILHO1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho2"&gt;FILHO2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho3"&gt;FILHO3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho4"&gt;FILHO4&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h3>Visualização:</h3> 
 <div id="container">
-    <div id="pai">&lt;div id="pai"&gt;PAI
-        <div id="filho">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="filho"&gt;FILHO&lt;/div&gt;</div>
-        &lt;/div&gt;
+    <div id="pai1">PAI1
+        <div id="filho1">FILHO1</div>
+        <div id="filho2">FILHO2</div>
+        <div id="filho3">FILHO3</div>
+        <div id="filho4">FILHO4</div>
+    </div>
+    <div id="pai2">PAI2
+        <div id="filho1">FILHO1</div>
+        <div id="filho2">FILHO2</div>
+        <div id="filho3">FILHO3</div>
+        <div id="filho4">FILHO4</div>
     </div>
 </div>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai</span>'): Retorna um array com os resultados do seletor utilizado (no caso, um só elemento e seu respectivo "filho").</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1</span>'): Retorna uma coleção com os resultados do seletor utilizado (no caso, o elemento "pai1" e seus respectivos "filhos").</h4>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai</span>').<span class="metodos">children</span>('<span class="string">#filho</span>'): Nesse caso, retorna um array só com o elemento "filho".</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1</span>').<span class="metodos">children</span>(): Retorna uma coleção com os todos os elementos "filhos" do elemento "pai1".</h4>
 
-<h4><span class="metodos">$</span>('<span class="string">#pai</span>').<span class="metodos">children</span>('<span class="string">#filho</span>').<span class="metodos">remove</span>(): Remove o elemento "filho".</h4>
+<h4><span class="metodos">$</span>('<span class="string">#pai1 #filho3</span>'): Nesse caso, retorna uma coleção só com o elemento "filho3".</h4>
+
+<h4><span class="metodos">$</span>('<span class="string">#pai1 #filho3</span>').<span class="metodos">remove</span>(): Remove o elemento "filho3", "filho" do elemento "pai1".</h4>
 
 
 </body>
